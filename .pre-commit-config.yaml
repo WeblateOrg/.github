@@ -40,3 +40,11 @@ repos:
   rev: v1.11.0
   hooks:
   - id: zizmor
+- repo: https://github.com/gitleaks/gitleaks
+  rev: v8.27.2
+  hooks:
+  - id: gitleaks-docker
+ci:
+  autoupdate_schedule: quarterly
+  skip:
+  - gitleaks-docker
