@@ -41,8 +41,10 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
       with:
-        python-version: 3.13 || 3.14
+        python-version: '3.14'
     - uses: astral-sh/setup-uv@eb1897b8dc4b5d5bfe39a428a8f2304605e0983c # v7.0.0
+      with:
+        enable-cache: false
     - name: detect method
       id: detect
       run: |
@@ -63,6 +65,7 @@ jobs:
       env:
         RUFF_OUTPUT_FORMAT: github
         REUSE_OUTPUT_FORMAT: github
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: pre-commit (uvx)
       if: steps.detect.outputs.method == 'uvx'
       run: |
@@ -71,6 +74,7 @@ jobs:
       env:
         RUFF_OUTPUT_FORMAT: github
         REUSE_OUTPUT_FORMAT: github
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Install dependencies
       if: steps.detect.outputs.method == 'requirements'
       run: uv pip install --system -r requirements-lint.txt
@@ -85,6 +89,7 @@ jobs:
       env:
         RUFF_OUTPUT_FORMAT: github
         REUSE_OUTPUT_FORMAT: github
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: diff
       run: git diff
       if: always()
