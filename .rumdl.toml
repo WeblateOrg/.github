@@ -17,3 +17,4 @@ disable = [
   # Allow HTML
   "MD033"
 ]
+"profile/README.md" = ["MD033"]
