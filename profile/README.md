@@ -10,4 +10,4 @@ Follow Weblate:
 
 <a rel="me" href="https://fosstodon.org/@weblate" title="Mastodon">Mastodon</a> ·
 <a href="https://www.linkedin.com/company/weblate/" title="LinkedIn">LinkedIn</a> ·
-<a href="https://x.com/WeblateOrg" title="X">X</a> 
+<a href="https://x.com/WeblateOrg" title="X">X</a>
