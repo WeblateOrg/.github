@@ -4,7 +4,7 @@
 [![Translation status](https://hosted.weblate.org/widgets/weblate/-/svg-badge.svg)](https://hosted.weblate.org/engage/weblate/?utm_source=widget)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/552/badge)](https://bestpractices.coreinfrastructure.org/projects/552)
 [![Docker Layers](https://images.microbadger.com/badges/image/weblate/weblate.svg)](https://microbadger.com/images/weblate/weblate "Get your own image badge on microbadger.com")
-[![Documenation](https://readthedocs.org/projects/weblate/badge/)](https://docs.weblate.org/en/latest/admin/install/docker.html)
+[![Documentation](https://readthedocs.org/projects/weblate/badge/)](https://docs.weblate.org/en/latest/admin/install/docker.html)
 
 Shared GitHub organization content.
 
